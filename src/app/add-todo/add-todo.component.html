@@ -1,0 +1,20 @@
+<div>
+    <mat-card>
+        <mat-card-title>Add new Todo</mat-card-title>
+        <mat-card-content class="container">
+            <mat-checkbox [(ngModel)]="todo.isDone">Completed</mat-checkbox>
+            <mat-form-field>
+                <input [(ngModel)]="todo.task" matInput placeholder="Task">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input [(ngModel)]="todo.name" matInput placeholder="Name">
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions class="actions">
+            <button (click)="save()" mat-raised-button color="primary">
+                Save
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>
